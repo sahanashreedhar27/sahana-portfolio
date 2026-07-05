@@ -27,3 +27,6 @@ npm-debug.log*
 # Vite / TS cache
 *.tsbuildinfo
 .vite/
+
+# Theme previews (scratch work)
+theme-previews/

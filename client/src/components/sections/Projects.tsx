@@ -1,16 +1,16 @@
-import { ExternalLink, Lock } from "lucide-react";
-import { GithubIcon } from "@/components/ui/BrandIcons";
-import { Section } from "@/components/layout/Section";
-import { SectionTitle } from "@/components/ui/SectionTitle";
-import { Box } from "@/components/ui/Box";
-import { Badge } from "@/components/ui/Badge";
-import { projects } from "@/data/projects";
-import type { Project } from "@/types";
-import { cn } from "@/utils/cn";
+import { ExternalLink, Lock } from 'lucide-react';
+import { GithubIcon } from '@/components/ui/BrandIcons';
+import { Section } from '@/components/layout/Section';
+import { SectionTitle } from '@/components/ui/SectionTitle';
+import { Box } from '@/components/ui/Box';
+import { Badge } from '@/components/ui/Badge';
+import { projects } from '@/data/projects';
+import type { Project } from '@/types';
+import { cn } from '@/utils/cn';
 
-function StatusBadge({ status }: { status: Project["status"] }) {
-  if (status === "live") return null;
-  const label = status === "wip" ? "in progress" : "coming soon";
+function StatusBadge({ status }: { status: Project['status'] }) {
+  if (status === 'live') return null;
+  const label = status === 'wip' ? 'in progress' : 'coming soon';
   return (
     <span className="rounded-md border border-lime/40 px-2 py-0.5 font-mono text-[10px] uppercase tracking-wide text-lime">
       {label}
@@ -19,7 +19,7 @@ function StatusBadge({ status }: { status: Project["status"] }) {
 }
 
 function ProjectLinks({ project }: { project: Project }) {
-  const disabled = project.githubUrl === "#";
+  const disabled = project.githubUrl === '#';
   return (
     <div className="mt-4 flex items-center gap-4 font-mono text-xs">
       {disabled ? (
@@ -100,9 +100,9 @@ function Preview({ title, liveUrl }: { title: string; liveUrl?: string | null })
         className="flex h-full min-h-[100px] items-center justify-center bg-[linear-gradient(135deg,#1f1f1a,#111)] font-mono text-base text-lime [background-image:radial-gradient(circle_at_80%_20%,rgba(232,255,0,0.12),transparent_50%)]"
         aria-hidden
       >
-        {"{ "}
+        {'{ '}
         {title}
-        {" }"}
+        {' }'}
       </div>
     </div>
   );
@@ -118,15 +118,15 @@ export function Projects() {
       {/* Equal-weight cards, centered so a short list still feels intentional */}
       <div
         className={cn(
-          "mx-auto grid grid-cols-1 gap-4",
-          single ? "max-w-md" : "max-w-3xl md:grid-cols-2"
+          'mx-auto grid grid-cols-1 gap-4',
+          single ? 'max-w-md' : 'max-w-3xl md:grid-cols-2',
         )}
       >
         {projects.map((p, i) => (
           <Box
             key={p.id}
             delay={i * 0.1}
-            className={cn("flex flex-col", p.highlight && "border-lime/30")}
+            className={cn('flex flex-col', p.highlight && 'border-lime/30')}
           >
             {p.highlight && (
               <div className="mb-3 inline-flex w-fit items-center rounded-md bg-lime/10 px-2.5 py-1 font-mono text-[11px] font-semibold text-lime">
@@ -137,15 +137,11 @@ export function Projects() {
             <div className="mb-1 flex items-center justify-between gap-2">
               <div className="flex items-baseline gap-2">
                 <h3 className="text-lg font-bold">{p.title}</h3>
-                {p.year && (
-                  <span className="font-mono text-xs text-muted/70">{p.year}</span>
-                )}
+                {p.year && <span className="font-mono text-xs text-muted/70">{p.year}</span>}
               </div>
               <StatusBadge status={p.status} />
             </div>
-            <p className="flex-1 text-sm leading-relaxed text-muted">
-              {p.longDescription}
-            </p>
+            <p className="flex-1 text-sm leading-relaxed text-muted">{p.longDescription}</p>
             <div className="mt-3 flex flex-wrap gap-2">
               {p.tech.map((t) => (
                 <Badge key={t}>{t}</Badge>
@@ -157,7 +153,7 @@ export function Projects() {
       </div>
 
       <p className="mt-8 text-center font-mono text-xs text-muted">
-        More on{" "}
+        More on{' '}
         <a
           href="https://github.com/sahanashreedhar27"
           target="_blank"

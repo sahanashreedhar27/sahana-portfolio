@@ -1,5 +1,5 @@
-import type { ReactNode } from "react";
-import { cn } from "@/utils/cn";
+import type { ReactNode } from 'react';
+import { cn } from '@/utils/cn';
 
 interface SectionProps {
   id: string;
@@ -12,7 +12,7 @@ export function Section({ id, children, className }: SectionProps) {
   return (
     <section
       id={id}
-      className={cn("mx-auto max-w-[1180px] scroll-mt-24 px-5 pt-24 sm:px-6", className)}
+      className={cn('mx-auto max-w-[1180px] scroll-mt-24 px-5 pt-24 sm:px-6', className)}
     >
       {children}
     </section>

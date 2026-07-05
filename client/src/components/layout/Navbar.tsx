@@ -1,10 +1,10 @@
-import { useEffect, useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
-import { Menu, X } from "lucide-react";
-import { NAV_ITEMS, SECTION_IDS } from "@/utils/constants";
-import { useScrollSpy } from "@/hooks/useScrollSpy";
-import { personal } from "@/data/personal";
-import { cn } from "@/utils/cn";
+import { useEffect, useState } from 'react';
+import { AnimatePresence, motion } from 'framer-motion';
+import { Menu, X } from 'lucide-react';
+import { NAV_ITEMS, SECTION_IDS } from '@/utils/constants';
+import { useScrollSpy } from '@/hooks/useScrollSpy';
+import { personal } from '@/data/personal';
+import { cn } from '@/utils/cn';
 
 export function Navbar() {
   const active = useScrollSpy(SECTION_IDS);
@@ -21,18 +21,18 @@ export function Navbar() {
       setHidden(y > lastY && y > 200);
       lastY = y;
     };
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
   return (
     <motion.header
       initial={{ y: 0 }}
-      animate={{ y: hidden ? "-110%" : 0 }}
-      transition={{ duration: 0.35, ease: "easeInOut" }}
+      animate={{ y: hidden ? '-110%' : 0 }}
+      transition={{ duration: 0.35, ease: 'easeInOut' }}
       className={cn(
-        "fixed inset-x-0 top-0 z-50 transition-colors duration-300",
-        scrolled && "border-b border-[color:var(--border)] bg-bg/70 backdrop-blur-md"
+        'fixed inset-x-0 top-0 z-50 transition-colors duration-300',
+        scrolled && 'border-b border-[color:var(--border)] bg-bg/70 backdrop-blur-md',
       )}
     >
       <nav className="mx-auto flex max-w-[1180px] items-center justify-between px-5 py-4 sm:px-6">
@@ -50,8 +50,8 @@ export function Navbar() {
                 key={item.href}
                 href={item.href}
                 className={cn(
-                  "transition-colors hover:text-lime",
-                  isActive ? "text-lime" : "text-muted"
+                  'transition-colors hover:text-lime',
+                  isActive ? 'text-lime' : 'text-muted',
                 )}
               >
                 {item.label}
@@ -70,7 +70,7 @@ export function Navbar() {
             Resume ↓
           </a>
           <button
-            aria-label={menuOpen ? "Close menu" : "Open menu"}
+            aria-label={menuOpen ? 'Close menu' : 'Open menu'}
             aria-expanded={menuOpen}
             onClick={() => setMenuOpen((o) => !o)}
             className="text-text md:hidden"
@@ -85,7 +85,7 @@ export function Navbar() {
         {menuOpen && (
           <motion.div
             initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
+            animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.25 }}
             className="overflow-hidden border-b border-[color:var(--border)] bg-bg/95 backdrop-blur-md md:hidden"
@@ -97,8 +97,8 @@ export function Navbar() {
                   href={item.href}
                   onClick={() => setMenuOpen(false)}
                   className={cn(
-                    "rounded-lg px-3 py-2 transition-colors hover:bg-card-2 hover:text-lime",
-                    active === item.href.slice(1) ? "text-lime" : "text-muted"
+                    'rounded-lg px-3 py-2 transition-colors hover:bg-card-2 hover:text-lime',
+                    active === item.href.slice(1) ? 'text-lime' : 'text-muted',
                   )}
                 >
                   {item.label}

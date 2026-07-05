@@ -1,4 +1,4 @@
-import type { ComponentType } from "react";
+import type { ComponentType } from 'react';
 import {
   Code2,
   Layout,
@@ -12,8 +12,8 @@ import {
   Sparkles,
   Rocket,
   Users,
-} from "lucide-react";
-import { GithubIcon } from "@/components/ui/BrandIcons";
+} from 'lucide-react';
+import { GithubIcon } from '@/components/ui/BrandIcons';
 
 type IconComponent = ComponentType<{ size?: number | string; className?: string }>;
 
