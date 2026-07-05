@@ -9,10 +9,10 @@ smooth Framer Motion animations throughout.
 
 ## Tech stack
 
-| Layer | Tech |
-|---|---|
+| Layer    | Tech                                                                    |
+| -------- | ----------------------------------------------------------------------- |
 | Frontend | React 18 · TypeScript · Vite · Tailwind CSS v3 · Framer Motion · Lucide |
-| Tooling | npm workspaces · ESM throughout |
+| Tooling  | npm workspaces · ESM throughout                                         |
 
 Fully static — no backend. Contact is handled with direct email / LinkedIn /
 GitHub links, so there's nothing to run, secure, or pay to host.
@@ -58,6 +58,7 @@ All content is plain TypeScript in `client/src/data/` — no component edits nee
 ## Before deploying
 
 Drop these into `client/public/` (see `client/public/ASSETS_TODO.md`):
+
 - `resume.pdf` — your latest resume (the “resume.pdf ↓” buttons link to it)
 - `og-image.png` — 1200×630 social-share preview (optional)
 

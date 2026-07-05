@@ -1,11 +1,11 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
 /**
  * Returns the id of the section currently considered "active" based on
  * scroll position. Uses IntersectionObserver against the given ids.
  */
 export function useScrollSpy(ids: string[], offset = 0.4): string {
-  const [activeId, setActiveId] = useState<string>(ids[0] ?? "");
+  const [activeId, setActiveId] = useState<string>(ids[0] ?? '');
 
   useEffect(() => {
     const elements = ids
@@ -24,7 +24,7 @@ export function useScrollSpy(ids: string[], offset = 0.4): string {
           setActiveId(visible[0].target.id);
         }
       },
-      { rootMargin: `-${offset * 100}% 0px -${(1 - offset) * 100}% 0px` }
+      { rootMargin: `-${offset * 100}% 0px -${(1 - offset) * 100}% 0px` },
     );
 
     elements.forEach((el) => observer.observe(el));

@@ -1,7 +1,7 @@
-import { motion, type Variants } from "framer-motion";
-import { personal, stats } from "@/data/personal";
-import { Button } from "@/components/ui/Button";
-import { GithubIcon, LinkedinIcon } from "@/components/ui/BrandIcons";
+import { motion, type Variants } from 'framer-motion';
+import { personal, stats } from '@/data/personal';
+import { Button } from '@/components/ui/Button';
+import { GithubIcon, LinkedinIcon } from '@/components/ui/BrandIcons';
 
 const container: Variants = {
   hidden: {},
@@ -46,16 +46,12 @@ export function Hero() {
               {personal.name}
             </motion.h1>
             <motion.div variants={item} className="text-lg text-muted sm:text-xl">
-              Senior <b className="font-semibold text-text">Full Stack</b> Software
-              Engineer
+              Senior <b className="font-semibold text-text">Full Stack</b> Software Engineer
             </motion.div>
             <motion.p variants={item} className="mt-1 text-[13px] text-muted/70">
               {personal.role}
             </motion.p>
-            <motion.p
-              variants={item}
-              className="mt-4 max-w-lg text-sm italic text-muted"
-            >
+            <motion.p variants={item} className="mt-4 max-w-lg text-sm italic text-muted">
               {personal.tagline}
             </motion.p>
           </div>

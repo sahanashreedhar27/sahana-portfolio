@@ -1,6 +1,6 @@
-import { motion, type Variants } from "framer-motion";
-import type { ReactNode } from "react";
-import { cn } from "@/utils/cn";
+import { motion, type Variants } from 'framer-motion';
+import type { ReactNode } from 'react';
+import { cn } from '@/utils/cn';
 
 const variants: Variants = {
   hidden: { opacity: 0, y: 22, scale: 0.985 },
@@ -22,21 +22,14 @@ interface BoxProps {
  * The core bento card. Animates in on scroll and highlights its border on
  * hover. Rounded, flat surface in the bento-grid style.
  */
-export function Box({
-  children,
-  className,
-  label,
-  delay = 0,
-  noHover = false,
-  id,
-}: BoxProps) {
+export function Box({ children, className, label, delay = 0, noHover = false, id }: BoxProps) {
   return (
     <motion.div
       id={id}
       className={cn(
-        "relative overflow-hidden rounded-[22px] border border-[color:var(--border)] bg-card p-7 sm:p-8 transition-colors duration-300",
-        !noHover && "hover:border-lime",
-        className
+        'relative overflow-hidden rounded-[22px] border border-[color:var(--border)] bg-card p-7 sm:p-8 transition-colors duration-300',
+        !noHover && 'hover:border-lime',
+        className,
       )}
       initial="hidden"
       whileInView="visible"

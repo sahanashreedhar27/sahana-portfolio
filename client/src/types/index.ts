@@ -26,8 +26,8 @@ export interface Education {
   period: string;
 }
 
-export type ProjectStatus = "live" | "wip" | "placeholder";
-export type ProjectCategory = "fullstack" | "frontend" | "backend" | "ai";
+export type ProjectStatus = 'live' | 'wip' | 'placeholder';
+export type ProjectCategory = 'fullstack' | 'frontend' | 'backend' | 'ai';
 
 export interface Project {
   id: number;
@@ -46,12 +46,12 @@ export interface Project {
 }
 
 export interface Achievement {
-  type: "award" | "speaking" | "impact" | "github" | "cert";
+  type: 'award' | 'speaking' | 'impact' | 'github' | 'cert';
   label: string;
   description: string;
   icon: string;
   date?: string;
-  status?: "placeholder";
+  status?: 'placeholder';
 }
 
 export interface Stat {

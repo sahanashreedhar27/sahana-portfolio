@@ -1,27 +1,27 @@
-import { Mail, ArrowUpRight } from "lucide-react";
-import { Section } from "@/components/layout/Section";
-import { SectionTitle } from "@/components/ui/SectionTitle";
-import { Box } from "@/components/ui/Box";
-import { GithubIcon, LinkedinIcon } from "@/components/ui/BrandIcons";
-import { personal } from "@/data/personal";
+import { Mail, ArrowUpRight } from 'lucide-react';
+import { Section } from '@/components/layout/Section';
+import { SectionTitle } from '@/components/ui/SectionTitle';
+import { Box } from '@/components/ui/Box';
+import { GithubIcon, LinkedinIcon } from '@/components/ui/BrandIcons';
+import { personal } from '@/data/personal';
 
 const links = [
   {
-    label: "Email",
+    label: 'Email',
     value: personal.email,
     href: `mailto:${personal.email}`,
     icon: Mail,
     external: false,
   },
   {
-    label: "LinkedIn",
+    label: 'LinkedIn',
     value: `/in/${personal.linkedinHandle}`,
     href: personal.linkedin,
     icon: LinkedinIcon,
     external: true,
   },
   {
-    label: "GitHub",
+    label: 'GitHub',
     value: `@${personal.githubHandle}`,
     href: personal.github,
     icon: GithubIcon,
@@ -40,13 +40,10 @@ export function Contact() {
       >
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-5 lg:items-center">
           <div className="lg:col-span-2">
-            <h3 className="text-2xl font-bold leading-tight">
-              Let's build something →
-            </h3>
+            <h3 className="text-2xl font-bold leading-tight">Let's build something →</h3>
             <p className="mt-3 text-sm leading-relaxed text-muted">
-              Open to senior full stack engineering opportunities. The fastest
-              way to reach me is email — I read every message and reply
-              personally.
+              Open to senior full stack engineering opportunities. The fastest way to reach me is
+              email — I read every message and reply personally.
             </p>
           </div>
 
@@ -55,9 +52,7 @@ export function Contact() {
               <a
                 key={label}
                 href={href}
-                {...(external
-                  ? { target: "_blank", rel: "noopener noreferrer" }
-                  : {})}
+                {...(external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
                 className="group flex flex-col gap-3 rounded-xl border border-[color:var(--border)] bg-card-2 p-4 transition-colors hover:border-lime"
               >
                 <div className="flex items-center justify-between">
@@ -69,9 +64,7 @@ export function Contact() {
                 </div>
                 <div>
                   <p className="text-xs text-muted">{label}</p>
-                  <p className="mt-0.5 break-all font-mono text-sm text-text">
-                    {value}
-                  </p>
+                  <p className="mt-0.5 break-all font-mono text-sm text-text">{value}</p>
                 </div>
               </a>
             ))}

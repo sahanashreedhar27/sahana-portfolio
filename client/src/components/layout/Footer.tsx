@@ -1,6 +1,6 @@
-import { Mail } from "lucide-react";
-import { personal } from "@/data/personal";
-import { GithubIcon, LinkedinIcon } from "@/components/ui/BrandIcons";
+import { Mail } from 'lucide-react';
+import { personal } from '@/data/personal';
+import { GithubIcon, LinkedinIcon } from '@/components/ui/BrandIcons';
 
 export function Footer() {
   const year = new Date().getFullYear();

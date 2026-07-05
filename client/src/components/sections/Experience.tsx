@@ -1,9 +1,9 @@
-import { motion } from "framer-motion";
-import { ArrowUpRight } from "lucide-react";
-import { Section } from "@/components/layout/Section";
-import { SectionTitle } from "@/components/ui/SectionTitle";
-import { Badge } from "@/components/ui/Badge";
-import { experiences } from "@/data/experience";
+import { motion } from 'framer-motion';
+import { ArrowUpRight } from 'lucide-react';
+import { Section } from '@/components/layout/Section';
+import { SectionTitle } from '@/components/ui/SectionTitle';
+import { Badge } from '@/components/ui/Badge';
+import { experiences } from '@/data/experience';
 
 export function Experience() {
   return (
@@ -18,7 +18,7 @@ export function Experience() {
           initial={{ scaleY: 0 }}
           whileInView={{ scaleY: 1 }}
           viewport={{ once: true, amount: 0.1 }}
-          transition={{ duration: 1.1, ease: "easeInOut" }}
+          transition={{ duration: 1.1, ease: 'easeInOut' }}
           style={{ bottom: 8 }}
         />
 
@@ -39,7 +39,7 @@ export function Experience() {
                 <div className="mb-3 flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
                   <div>
                     <h3 className="text-lg font-bold">
-                      {exp.role}{" "}
+                      {exp.role}{' '}
                       {exp.link ? (
                         <a
                           href={exp.link}

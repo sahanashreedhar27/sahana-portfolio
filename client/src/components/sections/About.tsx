@@ -1,8 +1,8 @@
-import { GraduationCap, MapPin, BadgeCheck } from "lucide-react";
-import { Section } from "@/components/layout/Section";
-import { SectionTitle } from "@/components/ui/SectionTitle";
-import { Box } from "@/components/ui/Box";
-import { personal, education } from "@/data/personal";
+import { GraduationCap, MapPin, BadgeCheck } from 'lucide-react';
+import { Section } from '@/components/layout/Section';
+import { SectionTitle } from '@/components/ui/SectionTitle';
+import { Box } from '@/components/ui/Box';
+import { personal, education } from '@/data/personal';
 
 export function About() {
   return (
