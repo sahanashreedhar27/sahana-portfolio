@@ -16,6 +16,7 @@ export const personal = {
   linkedinHandle: 'sahanashreedhar27',
   currentCompany: 'Northwestern Mutual',
   resumeUrl: '/resume.pdf',
+  avatar: '/avatar.jpg',
   availableForWork: true,
   bio: `I'm a full stack software engineer with 5+ years building robust, scalable web applications across the entire stack — from intuitive React UIs to reliable Java & Node.js backends and AWS cloud infrastructure. At Northwestern Mutual I lead complex B2B vendor integrations end-to-end, mentor engineers, and drive engineering excellence. Most recently I built an internal AI agent that parses our API schemas and auto-generates curl requests with realistic data — a fix for real workflow friction that opened a rotation with our AI Hub team, where I now go deeper on the problems I'm most excited about. I love turning ambiguous problems into clean, high-impact systems, and I'm building thoughtfully with AI as the field keeps moving.`,
   shortBio: `Full stack engineer building robust, scalable web apps with Java, React, Node.js & cloud tech. I lead vendor integrations end-to-end, mentor teams, and build thoughtfully with AI.`,
