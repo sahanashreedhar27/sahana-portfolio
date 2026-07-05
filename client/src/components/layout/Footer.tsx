@@ -39,7 +39,15 @@ export function Footer() {
         </div>
       </div>
       <p className="mt-4 text-center font-mono text-[11px] text-muted/60">
-        React · TypeScript · Tailwind · Framer Motion · Vite
+        Designed &amp; built with React · TypeScript · Tailwind · Framer Motion · Vite ·{' '}
+        <a
+          href={personal.portfolioRepo}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline decoration-dotted underline-offset-2 transition-colors hover:text-lime"
+        >
+          Source
+        </a>
       </p>
     </footer>
   );
