@@ -45,6 +45,17 @@ npm install
 npm run dev
 ```
 
+## Code formatting
+
+Formatting is handled by **Prettier**, enforced on commit via a **husky**
+pre-commit hook (`npx lint-staged`) that formats staged files automatically.
+`npm install` sets the hook up for you (via the `prepare` script).
+
+```bash
+npm run format         # format the whole codebase
+npm run format:check   # check formatting without writing (CI-friendly)
+```
+
 ## Editing content
 
 All content is plain TypeScript in `client/src/data/` — no component edits needed:
