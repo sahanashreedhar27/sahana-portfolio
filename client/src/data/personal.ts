@@ -11,6 +11,7 @@ export const personal = {
   phone: '+1 (312) 973-9274',
   github: 'https://github.com/sahanashreedhar27',
   githubHandle: 'sahanashreedhar27',
+  portfolioRepo: 'https://github.com/sahanashreedhar27/sahana-portfolio',
   linkedin: 'https://www.linkedin.com/in/sahanashreedhar27/',
   linkedinHandle: 'sahanashreedhar27',
   currentCompany: 'Northwestern Mutual',

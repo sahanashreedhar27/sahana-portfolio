@@ -8,9 +8,19 @@
     "build": "npm run build -w client",
     "preview": "npm run preview -w client",
     "format": "prettier --write \"client/src/**/*.{ts,tsx,css,json}\" \"*.{json,md}\"",
-    "format:check": "prettier --check \"client/src/**/*.{ts,tsx,css,json}\" \"*.{json,md}\""
+    "format:check": "prettier --check \"client/src/**/*.{ts,tsx,css,json}\" \"*.{json,md}\"",
+    "prepare": "husky"
   },
   "workspaces": [
     "client"
-  ]
+  ],
+  "lint-staged": {
+    "**/*.{ts,tsx,css,json,md}": [
+      "prettier --write"
+    ]
+  },
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^13.3.0"
+  }
 }
