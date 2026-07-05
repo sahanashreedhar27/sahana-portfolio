@@ -1,0 +1,12 @@
+{
+  "name": "sahana-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sahana Shreedhar Kulkarni — Senior Full Stack Engineer portfolio (React + Vite, static site).",
+  "scripts": {
+    "dev": "npm run dev -w client",
+    "build": "npm run build -w client",
+    "preview": "npm run preview -w client"
+  },
+  "workspaces": ["client"]
+}
