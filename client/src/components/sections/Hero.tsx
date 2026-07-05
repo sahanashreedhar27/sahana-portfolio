@@ -101,6 +101,7 @@ export function Hero() {
               <Button as="a" href="#projects" variant="lime">
                 View Work →
               </Button>
+              {/* Resume hidden for now
               <Button
                 as="a"
                 href={personal.resumeUrl}
@@ -110,6 +111,7 @@ export function Hero() {
               >
                 Resume ↓
               </Button>
+              */}
               <div className="ml-1 flex items-center gap-3">
                 <a
                   href={personal.github}

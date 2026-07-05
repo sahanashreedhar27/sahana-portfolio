@@ -3,7 +3,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import { NAV_ITEMS, SECTION_IDS } from '@/utils/constants';
 import { useScrollSpy } from '@/hooks/useScrollSpy';
-import { personal } from '@/data/personal';
+// import { personal } from '@/data/personal'; // re-enable when resume link is restored
 import { cn } from '@/utils/cn';
 
 export function Navbar() {
@@ -61,6 +61,7 @@ export function Navbar() {
         </div>
 
         <div className="flex items-center gap-4">
+          {/* Resume hidden for now
           <a
             href={personal.resumeUrl}
             target="_blank"
@@ -69,6 +70,7 @@ export function Navbar() {
           >
             Resume ↓
           </a>
+          */}
           <button
             aria-label={menuOpen ? 'Close menu' : 'Open menu'}
             aria-expanded={menuOpen}
@@ -104,7 +106,7 @@ export function Navbar() {
                   {item.label}
                 </a>
               ))}
-              <a
+              {/* Resume hidden for now 
                 href={personal.resumeUrl}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -113,6 +115,7 @@ export function Navbar() {
               >
                 Resume ↓
               </a>
+              */}
             </div>
           </motion.div>
         )}
