@@ -27,7 +27,6 @@ export interface Education {
 }
 
 export type ProjectStatus = 'live' | 'wip' | 'placeholder';
-export type ProjectCategory = 'fullstack' | 'frontend' | 'backend' | 'ai';
 
 export interface Project {
   id: number;
@@ -37,9 +36,7 @@ export interface Project {
   tech: string[];
   githubUrl: string;
   liveUrl: string | null;
-  featured: boolean;
   status: ProjectStatus;
-  category: ProjectCategory;
   highlight?: string;
   /** Year the project was built, e.g. "2021" */
   year?: string;

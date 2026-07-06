@@ -63,19 +63,3 @@ export const skillCategories: SkillCategory[] = [
     ],
   },
 ];
-
-// Flat list used for the hero / quick-glance pill cloud
-export const topSkills: string[] = [
-  'Java',
-  'TypeScript',
-  'React',
-  'Node.js',
-  'Spring',
-  'AWS',
-  'Kubernetes',
-  'Spark',
-  'Docker',
-  'PostgreSQL',
-  'Microservices',
-  'Python',
-];

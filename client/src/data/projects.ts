@@ -11,9 +11,7 @@ export const projects: Project[] = [
     tech: ['JavaScript', 'HTML5', 'CSS3', 'Firebase'],
     githubUrl: 'https://github.com/sahanashreedhar27/amazon-clone',
     liveUrl: 'https://clone-36d77.web.app/',
-    featured: false,
     status: 'live',
-    category: 'frontend',
     year: '2021',
   },
 ];
